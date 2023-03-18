@@ -1,32 +1,31 @@
-### YouTube API Project
+### YouTube Channel Video Analysis using YouTube API    
 
-This project is an exploration of the YouTube API using Python. The goal of the project is to analyze the performance of my YouTube channel by extracting data on my videos, such as view count, likes, comments, and publish dates.
+This Python project is designed to access a user's YouTube channel and retrieve details of all the videos within the channel. The script creates a Pandas DataFrame containing information on each video, including the title, publish date, number of views, likes, and comments.
 
-### Technologies Used
-The project was completed using Python 3.7 and the following libraries:
+### Prerequisites   
+* Python 3.x
+* Google API key
+* Channel ID
 
-**pandas**
-**requests**
-**datetime**
+### Installation    
+Clone the repository: *git clone https://github.com/username/YouTube-Video-Analysis.git*
+Install the required packages: *pip install pandas requests*
 
-### Getting Started
-To run this project, you'll need to have a YouTube API key. You can obtain a key by following the instructions here.
+### Usage   
+* Enter your Google API key and YouTube Channel ID in the keys.py file.
+* Run the script youtube_api.py. The script will output a Pandas DataFrame containing details of all the videos within your channel.
+* The DataFrame is sorted by view count in descending order to show the most viewed videos in the channel.
 
-Once you have a key, replace the API_KEY variable in the notebook with your key.
+### Functionality   
+The script uses the YouTube Data API v3 to retrieve data on a user's channel and videos. It makes a GET request to the API with the user's API key and channel ID to retrieve the necessary data. The data is then parsed to extract the required information and create a Pandas DataFrame.
 
-### Project Structure
-The project is contained in a single Jupyter Notebook file, youtube_api.ipynb.
+The **'get_videos'** function retrieves the details of all videos in the channel, including the video ID, title, publish date, view count, likes, and comments. The **'Video ID'** column is dropped from the DataFrame, and the **'View Count'** column is converted to an integer to enable sorting by view count.
 
-The notebook is divided into the following sections:
+### Contributions   
+Contributions to this project are welcome. To contribute, please create a pull request and include a description of the changes made.
 
-* **Importing Libraries**
-* **Making API Requests**
-* **Extracting Video Data**
-* **Storing Data in a Pandas DataFrame**
-* **Visualizing Data**
+### Acknowledgements    
+This project was inspired by Moringa School
 
-### Results
-After running the notebook, you will have a Pandas DataFrame containing data on all of your YouTube videos, including view count, likes, comments, and publish dates. You can use this data to analyze the performance of your channel and gain insights into what types of videos perform best.
-
-### Conclusion
-This project demonstrates the power of the YouTube API and how it can be used to extract valuable insights into your channel's performance. With a few lines of code, you can retrieve data on all of your videos and use it to make data-driven decisions about your content strategy.
+### Contact 
+If you have any questions or comments about this project, please feel free to contact me at ekaledaniel84@gmail.com.
