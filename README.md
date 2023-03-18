@@ -8,7 +8,7 @@ This Python project is designed to access a user's YouTube channel and retrieve 
 * Channel ID
 
 ### Installation    
-Clone the repository: *git clone https://github.com/username/YouTube-Video-Analysis.git*
+Clone the repository: *git clone https://github.com/username/YouTube-Video-Analysis.git*    
 Install the required packages: *pip install pandas requests*
 
 ### Usage   
